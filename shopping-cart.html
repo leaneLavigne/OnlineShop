@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Nicholas Cooper - 20241729-->
+<!-- Christina Duong - 20238163-->
+<!-- Léane Lavigne - 20190113-->
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>OnlineShop - Panier</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./assets/js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="./index.html">
+          <img alt="logo" src="./assets/img/logo.svg" title="Accueil">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./products.html">Produits</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a class="shopping-cart" href="./shopping-cart.html" title="Panier">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-shopping-cart fa-stack-1x"></i>
+              </span>
+              <span class="count"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <article>
+      <h1>Panier</h1>
+      <p id="cart-text"> Aucun produit dans le panier.</p>
+      <section id="cart-section">
+        <table id="cart" class="table shopping-cart-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Produit</th>
+            <th>Prix unitaire</th>
+            <th>Quantité</th>
+            <th>Prix</th>
+          </tr>
+        </thead>
+        <tbody id="cart-body"></tbody>
+        </table>
+        <p class="shopping-cart-total" id="total-amount"></p>
+        <a class="btn pull-right" href="./order.html">Commander <i class="fa fa-angle-double-right"></i></a>
+        <button class="btn remove-all" id="remove-all-items-button"><i class="fa fa-trash"></i>&nbsp; Vider le
+          panier</button>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p>
+      2023
+      <br />
+      Nicholas Cooper 20241729, Christina Duong 20238163 et Léane Lavigne 20190113
+    </p>
+  </footer>
+</body>
+
+</html>
